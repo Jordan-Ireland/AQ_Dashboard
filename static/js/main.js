@@ -18,7 +18,7 @@ function Search(e) {
 
 $(document).ready(function () {
     $.ajax({
-        url: 'http://kickstarter-success.herokuapp.com/',
+        url: 'https://kickstarter-success.herokuapp.com/',
         type: 'post',
         data: JSON.stringify({
             "name": "Test_Project_1",
