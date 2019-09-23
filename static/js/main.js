@@ -32,7 +32,7 @@ $(document).ready(function () {
             console.log(response);
         },
         error: function (error) {
-            console.log(error.responseText);
+            console.log(error);
         }
     });
 
