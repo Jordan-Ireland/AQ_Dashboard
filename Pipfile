@@ -12,6 +12,7 @@ requests = "*"
 py-openaq = "*"
 python-dateutil = "*"
 gunicorn = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.7"

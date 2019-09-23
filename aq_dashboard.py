@@ -2,8 +2,10 @@
 from flask import Flask, request, render_template, jsonify
 import openaq
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 
 APP = Flask(__name__)
+CORS(APP)
 api = openaq.OpenAQ()
 APP.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 DB = SQLAlchemy(APP)
