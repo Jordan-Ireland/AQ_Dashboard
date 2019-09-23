@@ -28,6 +28,7 @@ $(document).ready(function () {
             "campaign_duration_days": '30',
             "country": '3'
         }),
+        contentType: "application/json",
         success: function (response) {
             console.log(response);
         },
