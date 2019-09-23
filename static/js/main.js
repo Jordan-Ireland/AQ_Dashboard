@@ -20,14 +20,14 @@ $(document).ready(function () {
     $.ajax({
         url: 'http://kickstarter-success.herokuapp.com/',
         type: 'post',
-        data: {
+        data: JSON.stringify({
             "name": "Test_Project_1",
             "category": '5',
             "blurb": "Put the decription here and bla bla bla.",
             "goal_usd": '100000',
             "campaign_duration_days": '30',
             "country": '3'
-        },
+        }),
         success: function (response) {
             console.log(response);
         },
