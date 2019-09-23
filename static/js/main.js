@@ -28,12 +28,11 @@ $(document).ready(function () {
             "campaign_duration_days": '30',
             "country": '3'
         },
-        dataType: 'json',
         success: function (response) {
             console.log(response);
         },
         error: function (error) {
-            console.log(error);
+            console.log(error.responseText);
         }
     });
 
