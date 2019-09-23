@@ -16,3 +16,7 @@ select {
 .html, body {
     height:auto;
 }
+
+#city_search {
+    display:none;
+}

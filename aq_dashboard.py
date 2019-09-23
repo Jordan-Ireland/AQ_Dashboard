@@ -32,7 +32,7 @@ def search(country=None, city=None, parameter='pm25'):
     status, body = api.measurements(country=country,city=city, parameter=parameter)
 
     if len(body['results']) == 0:
-        return jsonify({'response':0, 'message':'Sorry, API only supports measurements in the last 90 days.'})
+        return jsonify({'response':0, 'message':'Sorry, The OpenAQ API only supports measurements in the last 90 days.'})
     else:
         return jsonify({'response':1,'message':body['results']})
 

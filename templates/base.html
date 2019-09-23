@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://unpkg.com/picnic" />
@@ -23,14 +23,13 @@
             <div class="col-md-5">
                 <form action="#" id="search">
                     <label for="country">Country</label>
-                    <select name="country_name"  id="country" size="5">
+                    <select name="country_name"  id="country" size="1">
                     </select>
 
-                    <label for="city">City</label>
-                    <select name="city_name"  id="city" size="5">
-                    </select>
-
-                    <input onclick="Search(event)" type="submit" value="Submit">
+                    <div id="city_search">
+                        <label for="city">City</label>
+                        <select name="city_name" id="city" size="1"></select>
+                    </div>
                 </form>
                 <p id="error"></p>
             </div>
